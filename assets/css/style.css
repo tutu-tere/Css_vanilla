@@ -1,0 +1,13 @@
+#titulo {
+  color:tomato;
+}
+
+p.texto {
+  color:slateblue;
+}
+
+p.especial {
+  color:mediumseagreen;
+}
+
+/*Dependiendo del orden en que escribo es que se va a sobreescribir*/
