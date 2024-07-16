@@ -24,7 +24,7 @@ div h2, div h3 {
 /*Este es un selector universal al que le aplica esta propiedad*/
 * {
   font-size: 24px; 
-  color:black;
+  /* color:black; */
 }
 
 /*Estas propiedades solo se van a aplicar si no han sido definidas por otros selectores*/
@@ -73,4 +73,26 @@ none-hidden*/
   width: 50px;
   overflow: scroll;
   outline: solid 5px;
+}
+.text {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-decoration: overline;
+  text-shadow: 3px 5px 5px blue ;
+}
+
+a:link { 
+  color:blueviolet;
+}
+
+a:visited {
+  color:gray;
+}
+
+a:hover {
+  color:yellow;
+}
+
+a:active {
+  color:red;
 }
