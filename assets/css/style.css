@@ -2,12 +2,62 @@
   color:tomato;
 }
 
+p.especial {
+  color:mediumseagreen;
+}
 p.texto {
   color:slateblue;
 }
 
-p.especial {
-  color:mediumseagreen;
+
+/*Dependiendo del orden en que escribo es que se va a sobreescribir, es decir la ultima instruccion tiene prioridad*/
+div p {
+  color:aquamarine;
 }
 
-/*Dependiendo del orden en que escribo es que se va a sobreescribir*/
+/*solo selecciona las etiquetas de p dentro de div*/
+
+div h2, div h3 {
+  color:brown;
+}
+
+/*Este es un selector universal al que le aplica esta propiedad*/
+* {
+  font-size: 24px; 
+  color:black;
+}
+
+/*Estas propiedades solo se van a aplicar si no han sido definidas por otros selectores*/
+
+/*
+.color {
+  color:#ff0000;
+}                 Hexadecimal, el mayor valor del color ffffff=blanco 
+y la ausencia del color #000000. Los primeros dos digitos es el color rojo, los segundos verdes y los terceros azules
+el primero nos habla del color y el de al lado su variación 
+*/
+
+
+/*.color {
+  color: rgb(0, 255, 255);
+}convencion RGB 255rojo,255verde,255azul*/
+
+/* .color {
+  border: 5px #f00 ridge;
+} */
+/*dotted- dashed- solid- double- 
+groove-ridge inset- ouset-  elementos tridimensionales
+none-hidden*/
+.color {
+  border-style: solid ;
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 2rem;
+}
+
+#fondo {
+  background-color: red;
+  background-image: image('dulces.png');
+  background-size: 2rem;
+}
+/* opacity: .3; */
